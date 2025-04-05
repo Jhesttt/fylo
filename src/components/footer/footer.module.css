@@ -1,0 +1,140 @@
+.container {
+    color: hsl(0, 0%, 100%);
+    padding: 80px clamp(16px, 10vw, 144px);
+    background-color: #0C1524;
+    font-size: 14px;
+}
+
+.logoCont {
+    margin-bottom: 44px;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.flexed {
+    display: flex;
+    justify-content: space-between  ;
+}
+
+
+.info {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start ;
+}
+
+.icon {
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.info ion-icon {
+    font-size: 20px !important;
+}
+
+.info p {
+    max-width: 320px;
+    overflow-wrap: break-word;
+}
+
+.infoCont{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    column-gap: 72px;
+    max-height: 80px;
+    flex-wrap: wrap;
+}
+
+.footnav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    column-gap: 72px;
+    max-height: 124px;
+    flex-wrap: wrap;
+}
+
+.footnav p {
+    cursor: pointer;
+    font-weight: 400;
+    width: 80px;
+}
+
+.footnav p:hover {
+    font-weight: 600;
+}
+
+.socials {
+    display: flex;
+    gap: 24px;
+}
+
+.socials ion-icon {
+    font-size: 20px;
+    transition: 0.15s;
+    cursor: pointer;
+    color: white;
+}
+
+.socials ion-icon:hover {
+    color: hsl(176, 68%, 64%);
+}
+
+
+
+@media all and (max-width: 1401px) {
+    .infoCont{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        column-gap: 64px;
+        max-height: auto;
+        flex-wrap: nowrap;
+    }
+
+    .info p {
+        max-width: 280px;
+        overflow-wrap: break-word;
+    }
+
+    .footnav {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        column-gap: 64px;
+        max-height: 124px;
+        flex-wrap: wrap;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    .flexed {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 44px;
+    }
+ 
+    .infoCont{
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        column-gap: 0;
+        max-height: none;
+        flex-wrap: nowrap;
+    }
+
+    .info p {
+        max-width: none;
+        overflow-wrap: break-word;
+    }
+}
+
+@media all and (max-width: 426px) {
+    .footnav {
+        column-gap: 0px;
+    }
+}
